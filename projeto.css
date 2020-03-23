@@ -1,3 +1,60 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-top{
+    padding: 0px 16px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.menu-top{
+    display: flex;
+    justify-content: space-between;
+    padding:0px;
+    margin:0px;
+    height: 35px;
+    width: 100%;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    margin:0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+}
+
+.left-list-items{ 
+    padding: 8px 28px;
+    border-right: 1px solid lightgrey;
+    font-size: 14px;
+    opacity: .5;
+}
+.left-list-items:hover{
+    opacity: 1;
+}
+
+.right-list-items{
+    padding-right: 24px;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: .5;
+}
+
+.chat {
+    display: flex;
+}
+
+.right-list-items:hover{
+    opacity: 1;
+}
+
+
+
+
 .container{
     padding-top: 3.125vw;
     padding-right: 3.125vw;
