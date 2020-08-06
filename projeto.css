@@ -1,9 +1,4 @@
 @font-face{
-    font-family: TradeGothic;
-    src: url('/assets/trade-gothic-condensed-no-18.otf');
-}
-
-@font-face{
     font-family: Futura-ExtraBoldCond;
     src: url('/assets/futura-condensed-extra-bold-regular-webfont.woff');
 }
@@ -149,7 +144,7 @@ body{
 .center-list-items{
     padding: 0 20px;
     height: 100%;
-    font-family: TradeGothic;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
