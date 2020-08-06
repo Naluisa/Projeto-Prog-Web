@@ -1,0 +1,256 @@
+@font-face{
+    font-family: Futura-ExtraBoldCond;
+    src: url('/assets/futura-condensed-extra-bold-regular-webfont.woff');
+}
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-top{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+}
+
+.menu-top{
+    padding: 0px 16px;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+    margin:0px;
+    height: 35px;
+    width: 100%;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    margin:0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+}
+
+.list li:hover{
+    cursor: pointer;
+}
+
+.left-list-items{ 
+    padding: 8px 28px;
+    border-right: 1px solid lightgrey;
+    font-size: 14px;
+    opacity: .5;
+}
+
+.left-list-items:hover{
+    opacity: 1;
+}
+
+.sp-icon{
+    width:32px;
+    height:20px;
+}
+
+.jordan-icon{
+    width:20px;
+    height:20px;
+}
+
+.right-list-items{
+    padding-right: 35px;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: .5;
+}
+
+.right-list-items:hover{
+    opacity: 1;
+}
+
+.right-list li:last-of-type{
+    padding-right: 0px;
+    opacity: 1;
+}
+
+.chat{
+    display: flex;
+}
+
+.chat-icon{
+    width:25px;
+    height:20px;
+    margin-right:5px;
+}
+
+.cart{
+    position:relative;
+}
+
+.cart-icon{
+    width:17px;
+    height:13.5px;
+}
+
+.badge{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    height: 12px;
+    width: 12px;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-menu-top{
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.NikeLogo{
+    padding: 5px 0px 5px 20px;
+    width: 90px;
+    height: 70px;
+}
+
+.nike-icon{
+    width: 90px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.second-item{
+    display: flex;
+    width: 100%;
+    margin: 0 0 0 375px;
+}
+
+.center-list-items{
+    padding: 0 20px;
+    height: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    margin-bottom: -1px;
+    align-items: center;
+    border-bottom: 3px solid white;
+}
+
+.center-list-items:hover{
+    border-color: black;
+}
+
+.search{
+    align-self: center;
+    display: flex;
+    height: 40px;
+    width: 265px;
+    border: .5px solid lightgrey;
+    background-color: white;
+    margin-right: 15px;
+    border-radius: 3px;
+    padding-right: 10px;
+}
+
+.search-icon{
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.search input{
+    height: 80%;
+    width: 100%;
+    border: 0;
+    align-self: center;
+    outline: none;
+    
+}
+
+.search input::placeholder{
+    color: lightgrey;
+}
+
+.container{
+    font: 75% arial, sans-serif;
+    padding-bottom: 50px;
+}
+
+.bloco_imagem{
+    margin-top: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem{
+    width: 95%;
+    height: 80%;
+}
+
+.titulos{
+    padding-top: 1.8vw;
+    text-align: center;
+    color: black;
+}
+
+.titulo{
+    line-height: 1.04;
+    margin-bottom: .7vw;
+    font-family: Futura-ExtraBoldCond, sans-serif;
+    font-size: 65px;
+    margin-top: .1px;
+}
+
+.subtitulo{
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 1.3vw;
+}
+
+.botao{
+    position: relative;
+}
+
+.botao button{
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.botao button:hover{
+    opacity: 0.75;
+}
+
+.bot{
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 24px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 25px;
+}
