@@ -1,3 +1,19 @@
+@font-face{
+    font-family: TradeGothic;
+    src: url('/assets/trade-gothic-condensed-no-18.otf');
+}
+
+@font-face{
+    font-family: Futura-ExtraBoldCond;
+    src: url('/assets/futura-condensed-extra-bold-regular-webfont.woff');
+}
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
 body{
     margin:0;
     padding: 0;
@@ -5,14 +21,17 @@ body{
 }
 
 .header-top{
-    padding: 0px 16px;
-    border-bottom: 1px solid lightgrey;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
 }
 
 .menu-top{
+    padding: 0px 16px;
+    border-bottom: 1px solid lightgrey;
     display: flex;
     justify-content: space-between;
-    padding:0px;
     margin:0px;
     height: 35px;
     width: 100%;
@@ -25,6 +44,7 @@ body{
     padding: 0;
     list-style: none;
     height: 100%;
+    width: 100%;
 }
 
 .list li:hover{
@@ -37,6 +57,7 @@ body{
     font-size: 14px;
     opacity: .5;
 }
+
 .left-list-items:hover{
     opacity: 1;
 }
@@ -63,9 +84,9 @@ body{
 }
 
 .right-list li:last-of-type{
-    padding-right: 0;
+    padding-right: 0px;
+    opacity: 1;
 }
-
 
 .chat{
     display: flex;
@@ -82,8 +103,8 @@ body{
 }
 
 .cart-icon{
-    width:15px;
-    height:13px;
+    width:17px;
+    height:13.5px;
 }
 
 .badge{
@@ -101,21 +122,94 @@ body{
     align-items: center;
 }
 
-.container{
-    padding-top: 3.125vw;
-    padding-right: 3.125vw;
-    padding-bottom: 0px;
-    padding-left: 3.125vw;
-    width: 94%;
-    font: 75% arial, sans-serif;
+.second-menu-top{
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
 }
 
-.bloco_image{
-    box-sizing: border-box;
+.NikeLogo{
+    padding: 5px 0px 5px 20px;
+    width: 90px;
+    height: 70px;
+}
+
+.nike-icon{
+    width: 90px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.second-item{
+    display: flex;
+    width: 100%;
+    margin: 0 0 0 375px;
+}
+
+.center-list-items{
+    padding: 0 20px;
+    height: 100%;
+    font-family: TradeGothic;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    margin-bottom: -1px;
+    align-items: center;
+    border-bottom: 3px solid white;
+}
+
+.center-list-items:hover{
+    border-color: black;
+}
+
+.search{
+    align-self: center;
+    display: flex;
+    height: 40px;
+    width: 265px;
+    border: .5px solid lightgrey;
+    background-color: white;
+    margin-right: 15px;
+    border-radius: 3px;
+    padding-right: 10px;
+}
+
+.search-icon{
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.search input{
+    height: 80%;
+    width: 100%;
+    border: 0;
+    align-self: center;
+    outline: none;
+    
+}
+
+.search input::placeholder{
+    color: lightgrey;
+}
+
+.container{
+    font: 75% arial, sans-serif;
+    padding-bottom: 50px;
+}
+
+.bloco_imagem{
+    margin-top: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .imagem{
-    width: 100%;
+    width: 95%;
     height: 80%;
 }
 
@@ -123,11 +217,6 @@ body{
     padding-top: 1.8vw;
     text-align: center;
     color: black;
-}
-
-@font-face{
-    font-family: Futura-ExtraBoldCond;
-    src: url('futura-condensed-extra-bold-regular-webfont.woff');
 }
 
 .titulo{
@@ -146,6 +235,18 @@ body{
 
 .botao{
     position: relative;
+}
+
+.botao button{
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.botao button:hover{
+    opacity: 0.75;
 }
 
 .bot{
