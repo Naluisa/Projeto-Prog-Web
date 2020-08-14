@@ -11,31 +11,280 @@
 
 body{
     margin:0;
-    padding: 0;
+    padding:0;
     font-family: 'Roboto', sans-serif;
 }
 
-.header-top{
+.header-desktop{
     width: 100%;
     background-color: white;
     position: fixed;
     top: 0;
 }
 
+.header-mobile{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    border-bottom: 4px solid black;
+}
+
+@media (max-width: 1022px){
+    .header-desktop{
+        display: none;
+    }
+    .menu-top{
+        padding: 5px 16px;
+        border-bottom: 0;
+        height: 50%;
+    }
+    
+    .cart{
+        padding-top:40px; 
+        margin-right:40px;
+    }
+    .cart-icon{ 
+        width:57px;
+        height:46px;
+    }
+    .badge{
+        top: 12px;
+        right: -18px;
+        height: 35px;
+        width: 35px;
+        font-size: 25px;
+        border: 4px solid white;
+    }
+    .NikeLogo{
+        padding: 0;
+        width: 110px;
+        height: 100%;
+        
+    }
+    .nike-icon{
+        height: 100%;
+        cursor: pointer;
+    }
+    .list{
+        margin: 100px 60px;
+    }
+    .center-list-items{
+        font-size: 40px;
+        padding: 0 25px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+
+    }
+    .search-icon{
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        margin: 0 30px;
+    }
+    
+    .search{
+        border: 1px solid  #ddd;
+        border-radius: 3px;
+        margin-left: 5%;
+        height: 40%;
+        width: 90%;
+    }
+    .search input{
+        height: 100%;
+        width: 100%;
+        font-size: 40px;
+        border: 0;
+        align-self: center;
+        outline: none;
+    }
+    .search input::placeholder{
+        font-size: 40px;
+        color: #8d8d8d;
+    }
+
+    .menu-mobile{
+        display: flex;
+        align-items: center;
+        margin-top: 275px;
+        width:100%;
+        height: 200px;
+    }
+    .sign{
+        font-size: 70px;
+        color: gray;
+    }
+
+    .bloco_imagem{
+        margin-top: 0;
+        padding:0 4.86vw 4.86vw 4.86vw;
+    }  
+    .imagem{
+        width: 100%;
+        content: url("./assets/veronamobile.jpg");
+    }
+    
+    .titulos{
+        padding-top: 0;
+    }
+    .titulo{
+        font-size: 100px;
+        margin-bottom: 2vw;
+    }
+    .subtitulo{
+        font-size: 40px;
+        margin-bottom: 3vw;
+    }                          
+    .bot {
+        margin-right: 30px;
+        border-radius: 50px;
+        font-size: 30px;
+        padding: 30px 60px;
+        font-weight: 0;
+    }
+}
+
+@media (min-width: 1023px){
+    .header-mobile{
+        display: none;
+    }
+
+    .menu-top{
+        padding: 0px 16px;
+        border-bottom: 2px solid lightgrey;
+        height: 30px;
+    }
+    .list{
+        margin:0;
+    }
+
+    .cart-icon{
+        width:17px;
+        height:13.5px;
+    }
+    
+    .badge{
+        top: -4px;
+        right: -4px;
+        height: 12px;
+        width: 12px;
+        font-size: 10px;
+    }
+
+    .NikeLogo{
+        padding: 5px 0px 5px 20px;
+        width: 90px;
+        height: 100%;
+    }
+
+    .nike-icon{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .center-list-items{
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: -1px;
+        border-bottom: 3px solid transparent;
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .search-icon{
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    .search{
+        height: 58%;
+        width: 25%;
+        border: .5px solid lightgrey;
+        border-radius: 3px;
+    }
+
+    .search input{
+        height: 80%;
+        width: 100%;
+        border: 0;
+        align-self: center;
+        outline: none;
+    }
+
+    .search input::placeholder{
+        color: lightgrey;
+    }
+
+    .titulos{
+        padding-top: 1.8vw;
+    }
+
+    .titulo{
+        margin-bottom: .7vw;
+        font-size: 65px;
+    }
+
+    .subtitulo{
+        font-size: 18px;
+        margin-bottom: 1.3vw;
+    }
+
+    .bot{
+        margin-right: 10px;
+        border-radius: 24px;    
+        font-size: 16px;
+        padding: 12px 25px;
+        font-weight: 600;
+    }
+
+    .bloco_imagem{
+        margin-top: 140px;
+        padding: 0 16px; 
+    }
+
+    .imagem{
+        width: 100%;
+        height: 80%;
+        content: url("./assets/verona.jpg");
+    }    
+}
+
+.search-icon-div{
+    display: flex;
+    align-items: center;
+}
+
+.menu-lateral{
+    margin: 40px 40px;
+    height: 32%;
+    width: 6%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.ml{
+    width: 100%;
+    height: 4.5px;
+    border-radius: 45px;
+    background-color: black;
+}
+
 .menu-top{
-    padding: 0px 16px;
-    border-bottom: 1px solid lightgrey;
     display: flex;
     justify-content: space-between;
-    margin:0px;
-    height: 35px;
+    margin: 0px;
     width: 100%;
 }
 
 .list{
     display: flex;
     align-items: center;
-    margin:0;
     padding: 0;
     list-style: none;
     height: 100%;
@@ -47,10 +296,13 @@ body{
 }
 
 .left-list-items{ 
-    padding: 8px 28px;
+    padding: 0 28px;
     border-right: 1px solid lightgrey;
     font-size: 14px;
     opacity: .5;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .left-list-items:hover{
@@ -71,18 +323,7 @@ body{
     padding-right: 35px;
     line-height: 20px;
     opacity: .5;
-}
-
-@media (max-width:1060px){
-    .right-list-items{
-        font-size: 12.5px; 
-    }
-}
-
-@media (min-width: 1024px){
-    .right-list-items{
-        font-size: 14px;
-    }
+    font-size: 14px ;
 }
 
 .right-list-items:hover{
@@ -108,20 +349,10 @@ body{
     position:relative;
 }
 
-.cart-icon{
-    width:17px;
-    height:13.5px;
-}
-
 .badge{
     position: absolute;
-    top: -4px;
-    right: -4px;
-    height: 12px;
-    width: 12px;
     background-color: red;
     border-radius: 50%;
-    font-size: 10px;
     color: white;
     display: flex;
     justify-content: center;
@@ -133,18 +364,6 @@ body{
     display: flex;
 }
 
-.NikeLogo{
-    padding: 5px 0px 5px 20px;
-    width: 90px;
-    height: 70px;
-}
-
-.nike-icon{
-    width: 90px;
-    height: 60px;
-    cursor: pointer;
-}
-
 .second-item{
     display: flex;
     width: 100%;
@@ -153,76 +372,27 @@ body{
 
 @media (max-width:1260px) {
     .second-item {
-        margin-left:13%;
-    }
-}
-
-@media (max-width:1150px){
-    .second-item{
         margin-left:5%;
     }
 }
 
 .center-list-items{
     height: 100%;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     display: flex;
-    margin-bottom: -1px;
     align-items: center;
-    border-bottom: 3px solid transparent;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .center-list-items:hover{
     border-color: black;
 }
 
-@media (max-width:1060px){
-    .center-list-items{
-        font-size: 14px; 
-        padding: 0 15px;
-    }
-}
-
-@media (min-width: 1060px){
-    .center-list-items{
-        font-size: 16px;
-        padding: 0 20px;
-    }
-}
-
 .search{
     align-self: center;
     display: flex;
-    height: 58%;
-    width: 25%;
-    border: .5px solid lightgrey;
     background-color: white;
     margin-right: 15px;
-    border-radius: 3px;
     padding-right: 10px;
-}
-
-.search-icon{
-    width: 17px;
-    height: 17px;
-    cursor: pointer;
-    margin: 10px;
-}
-
-.search input{
-    height: 80%;
-    width: 100%;
-    border: 0;
-    align-self: center;
-    outline: none;
-    
-}
-
-.search input::placeholder{
-    color: lightgrey;
 }
 
 .container{
@@ -231,36 +401,24 @@ body{
 }
 
 .bloco_imagem{
-    margin-top: 140px;
     width: 100%;
-    padding: 0 16px; 
     display: flex;
     justify-content: center;
 }
 
-.imagem{
-    width: 100%;
-    height: 80%;
-}
-
 .titulos{
-    padding-top: 1.8vw;
     text-align: center;
     color: black;
 }
 
 .titulo{
     line-height: 1.04;
-    margin-bottom: .7vw;
     font-family: Futura-ExtraBoldCond, sans-serif;
-    font-size: 65px;
     margin-top: .1px;
 }
 
 .subtitulo{
     display: inline-block;
-    font-size: 18px;
-    margin-bottom: 1.3vw;
 }
 
 .botao{
@@ -280,12 +438,9 @@ body{
 }
 
 .bot{
-    margin-right: 10px;
+    
     background-color: black;
-    color: white;
-    border-radius: 24px;
+    color: white;   
     display: inline-block;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 12px 25px;
+
 }
